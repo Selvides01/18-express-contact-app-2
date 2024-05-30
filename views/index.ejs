@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %>   </title>
+</head>
+<body>
+    <h3>Links</h3>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/about">About</a>
+        </li>
+        <li>
+            <a href="/contact">Contact</a>
+        </li>
+        <li>
+            <a href="/product/10">Product</a>
+        </li>
+
+    </ul> -->
+    <h1>Web Server Nodejs</h1>
+    <h2>Halo, Nama Saya <%= nama %></h2>
+
+    <h4>Daftar Mahasiswa</h4>
+    <% if (mahasiswa.lenght < 1) { %>
+     <p>Data mahasiswa masih kosong</p>
+    <% } else { %>
+        <% mahasiswa.forEach(mhs => { %>
+        <ul>
+            <li>Nama : <%= mhs.nama %></li>
+            <li>Email : <%= mhs.email %></li>
+        </ul>
+    <% }) %>   <% } %> 
+
+<!-- </body>
+</html> -->
